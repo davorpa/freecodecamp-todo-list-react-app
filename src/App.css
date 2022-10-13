@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 2rem;
   text-align: center;
-  padding: 30px;
+  padding: 2rem;
   font-family: Lato, sans-serif;
 }
 
@@ -25,10 +25,18 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  width: 600px;
+  min-height: calc(100vh - 2.5rem - 2*(1rem + 2rem));
+  background-color: #d5d6d7;
+  color: #080814;
+  border: 0.125rem solid #666;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.125rem 0.6rem 0.5rem rgb(255 255 255 / 50%);
 }
 
 .App-logo {
-  height: 30px;
+  height: 2.5rem;
 }
