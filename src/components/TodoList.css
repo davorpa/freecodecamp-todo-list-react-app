@@ -11,3 +11,8 @@
 .todo-footer {
   margin-bottom: 1rem;
 }
+
+.todo-empty {
+  margin: auto;
+  font-size: 2rem;
+}

@@ -36,6 +36,7 @@ function TodoList() {
             <footer className="todo-footer">
                 <TaskForm onSubmit={addTask} />
             </footer>
+            {!tasks.length && <p className="todo-empty">Sin registros</p>}
             {tasks.map((task) => (
                 <Task
                     key={task.id}
