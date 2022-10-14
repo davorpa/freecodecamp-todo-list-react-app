@@ -6,8 +6,8 @@ import TaskForm from "./TaskForm";
 
 function TodoList() {
     const [tasks, setTasks] = useState([
-        { id: uuidv4(), text: "Tarea 1" },
-        { id: uuidv4(), text: "Tarea 2", completed: true },
+        // { id: uuidv4(), text: "Tarea 1" },
+        // { id: uuidv4(), text: "Tarea 2", completed: true },
     ]);
 
     const addTask = (task) => {
@@ -24,7 +24,8 @@ function TodoList() {
     };
 
     const removeTask = (taskId) => {
-        console.log("tarea eliminada", taskId);
+        // accept all not matching that id
+        setTasks(tasks.filter(({ id }) => id !== taskId));
     };
 
     return (
