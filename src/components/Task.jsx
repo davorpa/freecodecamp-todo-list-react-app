@@ -14,7 +14,7 @@ function Task({
         <div className={cssClass}>
             <div className="task-text">{text}</div>
             <div className="task-actions">
-                <button className="btn" aria-label="Delete">
+                <button className="btn" aria-label="Eliminar">
                     <BsTrash />
                 </button>
             </div>
