@@ -1,0 +1,36 @@
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-input {
+  width: 452px;
+  font-size: 1.125rem;
+  background-color: #f5f6f7;
+  color: #1b1b32;
+  padding: 0.75rem 2rem 0.75rem 1rem;
+  border: 0.125rem solid #00571b;
+  border-radius:  0.25rem 0 0 0.25rem;
+  outline: none;
+}
+
+.task-btn {
+  width: 3.025rem;
+  height: 3.07rem;
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  background-color: #00571b;
+  border: 0.125rem solid #00571b;
+  border-radius: 0 0.25rem 0.25rem 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.task-btn .react-icons {
+  height: 100%;
+  width: auto;
+  color: #f5f6f7;
+}

@@ -2,7 +2,10 @@
 }
 
 .todo-title {
-    font-family: Roboto, Lato, sans-serif;
-    font-size: 1.5rem;
-    text-decoration: underline;
+  font-family: Roboto, Lato, sans-serif;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.todo-footer {
 }
