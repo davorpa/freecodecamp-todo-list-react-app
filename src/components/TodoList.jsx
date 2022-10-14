@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TodoList.css";
 import Task from "./Task";
 import TaskForm from "./TaskForm";
 
 function TodoList() {
+    const [tasks, setTasks] = useState([
+        { text: "Tarea 1" },
+        { text: "Tarea 2", completed: true },
+    ]);
+
     return (
         <React.Fragment>
             <header className="todo-header">
@@ -12,8 +17,9 @@ function TodoList() {
             <footer className="todo-footer">
                 <TaskForm />
             </footer>
-            <Task text="Tarea 1" />
-            <Task text="Tarea 1" />
+            {tasks.map((task) => (
+                <Task text={task.text} completed={task.completed} />
+            ))}
         </React.Fragment>
     );
 }
