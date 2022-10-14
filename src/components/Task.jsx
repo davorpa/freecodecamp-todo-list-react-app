@@ -1,7 +1,12 @@
 import React from "react";
 import "./Task.css";
+import { BsTrash } from "react-icons/bs";
 
-function Task({ className, text, completed }) {
+function Task({
+    /** @type string */ className,
+    /** @type string */ text,
+    /** @type boolean */ completed,
+}) {
     let cssClass = "task";
     className && (cssClass += " " + className);
     completed && (cssClass += " completed");
@@ -9,7 +14,9 @@ function Task({ className, text, completed }) {
         <div className={cssClass}>
             <div className="task-text">{text}</div>
             <div className="task-actions">
-                <button className="btn">❌</button>
+                <button className="btn" aria-label="Delete">
+                    <BsTrash />
+                </button>
             </div>
         </div>
     );
