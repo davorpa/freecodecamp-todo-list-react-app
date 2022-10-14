@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import "./TodoList.css";
 import Task from "./Task";
 import TaskForm from "./TaskForm";
 
 function TodoList() {
     const [tasks, setTasks] = useState([
-        { text: "Tarea 1" },
-        { text: "Tarea 2", completed: true },
+        { id: uuidv4(), text: "Tarea 1" },
+        { id: uuidv4(), text: "Tarea 2", completed: true },
     ]);
 
     const addTask = (task) => {
@@ -31,6 +32,8 @@ function TodoList() {
             </footer>
             {tasks.map((task) => (
                 <Task
+                    key={task.id}
+                    id={task.id}
                     text={task.text}
                     completed={task.completed}
                     onComplete={completeTask}
