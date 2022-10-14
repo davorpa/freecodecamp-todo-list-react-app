@@ -11,7 +11,12 @@ function TodoList() {
     ]);
 
     const addTask = (task) => {
-        console.log("tarea agregada", task);
+        if (task.text) {
+            // merge with defaults
+            task = Object.assign({}, { id: uuidv4(), completed: false }, task);
+            // prepend
+            setTasks([task, ...tasks]);
+        }
     };
 
     const completeTask = (taskId) => {

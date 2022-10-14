@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
 import { BsClipboardPlus } from "react-icons/bs";
 import "./TaskForm.css";
 
@@ -12,12 +11,7 @@ function TaskForm({ /** @type Function */ onSubmit }) {
 
     const handleFormSubmit = (/** @type Event */ event) => {
         event.preventDefault();
-        onSubmit &&
-            onSubmit({
-                id: uuidv4(),
-                text: input,
-                completed: false,
-            });
+        onSubmit && onSubmit({ text: input.trim() });
         setInput("");
     };
 
