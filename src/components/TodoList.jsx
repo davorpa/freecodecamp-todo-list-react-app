@@ -20,6 +20,16 @@ function TodoList() {
     };
 
     const completeTask = (taskId) => {
+        // remap all changing completed prop of desired
+        setTasks(
+            tasks.map(
+                (task) => (
+                    // eslint-disable-next-line no-sequences
+                    task.id === taskId && (task.completed = !task.completed),
+                    task
+                )
+            )
+        );
         console.log("tarea completada", taskId);
     };
 
