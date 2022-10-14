@@ -1,4 +1,5 @@
 .todo-header {
+  margin-bottom: 1rem;
 }
 
 .todo-title {
@@ -8,4 +9,5 @@
 }
 
 .todo-footer {
+  margin-bottom: 1rem;
 }
