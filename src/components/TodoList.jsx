@@ -30,7 +30,6 @@ function TodoList() {
                 )
             )
         );
-        console.log("tarea completada", taskId);
     };
 
     const removeTask = (taskId) => {
