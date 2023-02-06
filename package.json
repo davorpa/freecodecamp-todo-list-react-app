@@ -1,4 +1,5 @@
 {
+  "homepage": "https://davorpa.github.io/freecodecamp-todo-list-react-app/",
   "name": "freecodecamp-todo-list-react-app",
   "version": "0.1.0",
   "private": true,
@@ -14,8 +15,13 @@
     "web-vitals": "^3.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:develop": "cross-env NODE_ENV=development PUBLIC_URL=. react-scripts build",
+    "preserve": "npm run build:develop",
+    "serve": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -36,5 +42,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "7.0.3",
+    "gh-pages": "5.0.0",
+    "serve": "14.2.0"
   }
 }
