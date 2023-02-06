@@ -20,6 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:develop": "cross-env NODE_ENV=development PUBLIC_URL=. react-scripts build",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --fix --ext .js,.jsx",
     "preserve": "npm run build:develop",
     "serve": "serve -s build",
     "test": "react-scripts test",
@@ -31,6 +33,9 @@
       "react-app/jest"
     ]
   },
+  "eslintIgnore": [
+    "build/**"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
