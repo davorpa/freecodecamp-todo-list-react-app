@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc4bbff3.css",
-    "main.js": "/static/js/main.9bdbb63f.js",
-    "static/js/496.9a84283e.chunk.js": "/static/js/496.9a84283e.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.2847bc12544317f79647dc18d67a0930.svg",
-    "index.html": "/index.html",
-    "main.dc4bbff3.css.map": "/static/css/main.dc4bbff3.css.map",
-    "main.9bdbb63f.js.map": "/static/js/main.9bdbb63f.js.map",
-    "496.9a84283e.chunk.js.map": "/static/js/496.9a84283e.chunk.js.map"
+    "main.css": "/freecodecamp-todo-list-react-app/static/css/main.dc4bbff3.css",
+    "main.js": "/freecodecamp-todo-list-react-app/static/js/main.95dbb3d3.js",
+    "static/js/496.9a84283e.chunk.js": "/freecodecamp-todo-list-react-app/static/js/496.9a84283e.chunk.js",
+    "static/media/logo.svg": "/freecodecamp-todo-list-react-app/static/media/logo.2847bc12544317f79647dc18d67a0930.svg",
+    "index.html": "/freecodecamp-todo-list-react-app/index.html",
+    "main.dc4bbff3.css.map": "/freecodecamp-todo-list-react-app/static/css/main.dc4bbff3.css.map",
+    "main.95dbb3d3.js.map": "/freecodecamp-todo-list-react-app/static/js/main.95dbb3d3.js.map",
+    "496.9a84283e.chunk.js.map": "/freecodecamp-todo-list-react-app/static/js/496.9a84283e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4bbff3.css",
-    "static/js/main.9bdbb63f.js"
+    "static/js/main.95dbb3d3.js"
   ]
 }
